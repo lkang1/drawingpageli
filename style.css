@@ -1,0 +1,145 @@
+body{
+  background-color: #a7e8c6;
+  background-image: url("http://cloud-3.steamusercontent.com/ugc/94977996568212001/35CBEB19364DB3C18A56EDD79664B68AB1459A46/");
+}
+.image-1 {
+  opacity: 0.8;
+  margin-top: 10px;
+
+  animation-name: moving;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+
+@keyframes moving {
+  0%{
+    margin-left: 0px;
+  }
+  20%{
+    margin-left: 400px;
+  }
+  40%{
+    margin-left: 800px;
+  }
+  60%{
+    margin-right: 0px;
+  }
+  80%{
+    margin-right: 400px;
+  }
+  100%{
+    margin-right: 800px;
+  }
+
+}
+.image-2{
+  opacity: 0.7;
+  margin-left: 0px;
+
+  animation-name: rotate;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+}
+@keyframes rotate {
+  0%{
+    transform: rotate3d(10,15,2,0deg);
+    margin-left:0px;
+  }
+  20%{
+    transform: rotate3d(10,50,2,120deg);
+    margin-left: 200px;
+  }
+  40%{
+    transform: rotate3d(10,15,2,240deg);
+    margin-left: 400px;
+  }
+  60%{
+    transform: rotate3d(5,5,2,360deg);
+    margin-right: 200px;
+  }
+  80%{
+    transform: rotate3d(5,5,2,480deg);
+    margin-right: 200px;
+  }
+  100%{
+    transform: rotate3d(5,5,2,720deg);
+    margin-right: 0px;
+  }
+}
+
+.image-3{
+  opacity: 0.8;
+  margin: 200px;
+  position:relative;
+
+  animation-name: crush;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes crush {
+  0%{
+    transform: rotate(0deg);
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  20%{
+    transform: rotate(720deg);
+    margin-top: 0px;
+    margin-left:500px;
+  }
+  40%{
+    transform: rotate(72deg);
+    margin-top: 0px;
+    margin-left: 600px;
+  }
+  60%{
+    transform: rotate(98deg);
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  80%{
+    transform: rotate(134deg);
+    margin-left: 200px;
+  }
+  100%{
+    transform: rotate(180deg);
+    margin-left:300;
+
+  }
+}
+
+.image-4{
+  margin: 0px;
+  opacity: 0.8;
+
+  animation-name: movingdown;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+@keyframes movingdown {
+  0%{
+    margin-top: 0px;
+  }
+  20%{
+    margin-top: 100px;
+  }
+  40%{
+    margin-top: 150px;
+  }
+  60%{
+    margin-top: 250px;
+  }
+  80%{
+    margin-top: 50px;
+  }
+  100%{
+    margin-top: 120px;
+  }
+
+}
